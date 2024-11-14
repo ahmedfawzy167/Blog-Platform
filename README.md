@@ -12,42 +12,27 @@ Predefined Categories: Posts are restricted to specific categories like Technolo
 Setup and Installation
 Clone the Repository:
 
-bash
-Copy code
 git clone https://github.com/ahmedfawzy167/Blog-Platform.git
-cd blog-platform-api
+cd Blog-Platform
 Install Dependencies:
 
-bash
-Copy code
 composer install
 Configure Environment:
 
 Copy .env.example to .env:
-bash
-Copy code
 cp .env.example .env
 Set up database credentials and other configurations in the .env file.
-Generate App Key:
 
-bash
-Copy code
 php artisan key:generate
 Run Migrations and Seed Database:
 
-bash
-Copy code
 php artisan migrate --seed
-Install JWT:
+
+Install JWT: https://jwt-auth.readthedocs.io/en/develop/
 
 Generate JWT secret:
-bash
-Copy code
-php artisan jwt:secret
 Run the Application:
 
-bash
-Copy code
 php artisan serve
 Endpoints Overview
 Method	Endpoint	Description
